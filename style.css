@@ -1,0 +1,928 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  --color-primary: #1e3932;
+  --bg-primary: #d4e9e2;
+  --bg-secundary: #008248;
+  --bg-primary-clear: #dbece7;
+  --bg-suplement: #000000;
+  --max-width: 90%;
+  --font-family: "Montserrat", sans-serif;
+}
+.container-width {
+  width: 90%;
+  margin: 0 auto;
+}
+/*
+    NAVEGACION -HEADER
+*/
+.nav-items {
+  padding: 1rem 0;
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-nav .logo {
+  width: 2.7rem;
+}
+
+.container-nav .menu-icon {
+  font-size: 1.5rem;
+  color: #00000070;
+}
+
+/* Se oculta en la version movil */
+.container-nav ul,
+.container-login {
+  display: none;
+}
+
+.promotions {
+  height: 50px;
+  color: white;
+  background-color: var(--color-primary);
+  display: flex;
+  font-size: 0.7rem;
+  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+/* Enlcaes con fondos y radius */
+.item-enlace {
+  border: 1.5px solid white;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.promotions .enlace_promotions {
+  color: inherit;
+}
+/*  */
+
+/* MAIN */
+.hero-image {
+  width: 100%;
+  padding-bottom: 75%;
+  background-image: url(assets/hero-mobile_2021.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.info_starbucks {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0 0 0;
+}
+.item_sb-direction-desktop {
+  display: none;
+}
+
+.info_starbucks .title-sb {
+  font-weight: 600;
+  width: 15rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.info_starbucks .paragrapf-sb {
+  font-weight: 501;
+}
+
+.item-sb-movil {
+  background-color: #008248;
+  color: white;
+}
+.item-sb-desktop {
+  display: none;
+}
+
+.item_sb-direction-movil {
+  color: #000000;
+}
+
+/* SECCION DE BENEFICIOS */
+.container_information {
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.container_information .paragraoh_information {
+  font-size: 0.85rem;
+  padding: 1rem 0;
+}
+
+.card_facilities {
+  display: flex;
+  margin: 2.5rem 0;
+}
+
+.card_facilities > img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 1rem 0 0;
+}
+
+.card_facilities .info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-size: 0.9rem;
+  text-align: start;
+  color: var(--bg-suplement);
+}
+
+.info-card p {
+  font-family: Arial, sans-serif;
+}
+
+.info-card a {
+  font-family: Arial, sans-serif;
+  color: var(--color-primary);
+}
+
+/* SECCION FAVORITOS */
+.container_favorites {
+  text-align: center;
+  padding-bottom: 75%;
+}
+
+.start {
+  display: flex;
+}
+
+.container_item-favorites {
+  position: relative;
+}
+
+.start a {
+  width: 20%;
+  padding: 1rem 0;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #000000;
+  font-weight: bold;
+  position: relative;
+}
+
+.start i {
+  color: #ffaf03;
+  font-size: 0.6rem;
+  border: none;
+}
+
+.start a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  background-color: var(--bg-secundary);
+  bottom: 0;
+  left: 0;
+}
+
+.start a:hover::before {
+  width: 100%;
+}
+
+.info_favorites {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-color: var(--bg-primary-clear);
+  transition: all 0.2s ease;
+  padding: 0 1rem;
+}
+
+.info_favorites img {
+  padding: 3rem 0 0 0;
+}
+
+.info_favorites .tittle-favorites {
+  margin: 1.5rem 0;
+}
+
+.info_favorites p {
+  font-family: sans-serif;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/* seccion extras */
+.container_extras {
+  margin: 8rem auto 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.container_extras .title_extras {
+  padding: 1rem 0;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+.container_extras p {
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+.item_extra {
+  display: flex;
+  margin: 1.5rem 0;
+  text-align: start;
+}
+
+.item_extra img {
+  width: 6.5rem;
+  margin: 0 1.5rem 1rem 0;
+}
+
+.item_extra .title_extra {
+  padding-bottom: 0.5rem;
+}
+
+.item_extra .link_extra {
+  color: var(--color-primary);
+  font-family: sans-serif;
+}
+
+/* CONTAINER PAGOS */
+.container_pago {
+  background-color: #f2f0eb;
+}
+
+.container_info_pago {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.texto_pago {
+  font-family: sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.metod_pago {
+  text-align: start;
+  line-height: 1.5em;
+  padding: 3rem 0 0 0;
+}
+
+.metods_pago {
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+.metods_pago img {
+  width: 7rem;
+  margin: 0 1rem;
+}
+
+.info_metods_pago p {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.line_bottom {
+  border-bottom: thin solid rgba(0, 0, 0, 0.103);
+}
+/* RECOMPENSAS */
+.container_recompensas {
+  background-color: #d4e9e2;
+  position: relative;
+  padding: 7rem 3rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container_info_recompensas p {
+  font-size: 0.9rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.container_recompensas img {
+  width: 20rem;
+  object-fit: cover;
+}
+
+.container_recompensas::before {
+  content: url(assets/star_left.svg);
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  top: -6rem;
+  left: 0;
+  transform: rotate(160deg);
+}
+
+.container_recompensas::after {
+  content: url(assets/star-body.svg);
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  bottom: -11rem;
+  right: -4rem;
+  transform: rotate(200deg);
+}
+
+.enlace_recompensa {
+  background-color: var(--bg-secundary);
+  color: white;
+}
+
+.star_left,
+.star_right {
+  display: none;
+}
+
+/* caja preguntas */
+.container_questions{
+  margin: 2rem auto;
+}
+
+.container_questions p {
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.5rem 0;
+}
+
+.container_questions h3 {
+  margin: 1rem 0;
+  font-size: .85rem;
+}
+
+.container_questions a{
+  color: var(--bg-secundary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.questions aside{
+  margin-top: 6rem;
+}
+
+/* CAJA ENLACES EXTERNOS */
+.enlaces_externos{
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+}
+.container_about h2{
+  font-weight: 500;
+  font-size: 1.07rem;
+  margin: .8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa-caret-up{
+  font-size: 1.5rem;
+}
+
+.item_about{
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.item_about a{
+  text-decoration: none;
+  margin: .4rem 0;
+  font-size: .9rem;
+}
+
+.container_about.active .item_about {
+  max-height: 1000px; /* Ajusta esta altura según tus necesidades */
+}
+
+/* CAJA REDES Y TERMINOS */
+
+.social_networks{
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  display: flex;
+  gap: .5rem;  
+}
+
+.ig,
+.tw{
+  width: 35px;
+  height: 35px;
+  color: #d4e9e2;
+  background-color: #000000;
+  padding: .4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.social_networks .sp,.fb,.pt{
+  font-size: 2.2rem;
+  color: rgb(0, 0, 0);
+}
+
+.terminos{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.terminos a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+.copyright{
+  padding: 1.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .promotions {
+    justify-content: center;
+    font-size: 0.7rem;
+  }
+  .promotions .enlace_promotions {
+    display: none;
+  }
+
+  /* MAIN */
+  .hero-image {
+    width: 100%;
+    padding-bottom: 1%;
+    background-color: rgb(212, 233, 226);
+    background-image: url(assets/xl-hero-desktop.webp);
+    background-size: auto 89%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  .info_starbucks {
+    align-items: start;
+    padding: 4.5rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .info_starbucks .title-sb {
+    width: 16rem;
+    font-size: 2rem;
+    text-align: start;
+    line-height: 3rem;
+  }
+
+  .info_starbucks .paragrapf-sb {
+    font-size: 1.07rem;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .item-sb-movil {
+    display: none;
+  }
+
+  .item-sb-desktop {
+    display: initial;
+    background-color: #008248;
+    color: white;
+    font-size: 1rem;
+  }
+  .item_sb-direction-movil {
+    display: none;
+  }
+  .item_sb-direction-desktop {
+    width: 15rem;
+    display: initial;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .item_sb-direction-desktop a {
+    color: var(--bg-suplement);
+  }
+
+  /* CONTENIDO DE BENEFICIOS */
+  .container-facilities-information {
+    display: flex;
+    padding: 0 3rem;
+  }
+
+  .card_facilities {
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.4rem;
+  }
+
+  .card_facilities .info-card {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* FAVORITOS */
+  .container_favorites {
+    padding-bottom: 25%;
+  }
+
+  .start {
+    margin: 2rem 0 0 0;
+  }
+
+  .cont_information {
+    display: flex;
+    padding: 1.25rem 0;
+  }
+
+  .cont_information img {
+    width: 21rem;
+    padding: 0 0 1rem 0;
+  }
+
+  .cont_info {
+    margin-left: 4rem;
+    text-align: start;
+  }
+  .cont_info .tittle-favorites {
+    font-size: 1.5rem;
+  }
+
+  .cont_info p {
+    font-size: 1.15rem;
+  }
+  /* EXTRAS */
+  .container_extras .title_extras {
+    font-size: 2rem;
+  }
+  .container_extras .paragraph_extras {
+    font-size: 1rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .items-extras {
+    display: flex;
+    margin: 2rem 0;
+  }
+
+  .item_extra {
+    flex-direction: column;
+    margin: 1rem;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .item_extra .title_extra {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
+  .item_extra p {
+    font-size: 1.05rem;
+  }
+
+  .link_extra {
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .container_modo_pago {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, fit-contend);
+  }
+
+  .metod_pago {
+    grid-column: span 2;
+  }
+
+  .container_metods_card {
+    display: flex;
+  }
+
+  .metods_pago {
+    display: flex;
+    flex-basis: 50%;
+  }
+  /* RECOMPENSAS */
+  .container_recompensas {
+    background-image: url(assets/bg_start.webp);
+    padding: 1rem;
+    display: flex;
+  }
+
+  .container_info_recompensas {
+    width: 98%;
+    background-color: #d4e9e2;
+    margin: 1% auto;
+    padding: 3rem 0;
+    position: relative;
+  }
+
+  .container_info_recompensas p {
+    max-width: 30rem;
+    margin: 2rem auto;
+  }
+
+  .star_left {
+    display: initial;
+    width: 45%;
+    position: absolute;
+    left: -55px;
+    top: 1rem;
+  }
+
+  .star_right {
+    display: initial;
+    width: 45%;
+    position: absolute;
+    right: -55px;
+    top: 1rem;
+  }
+
+  .container_recompensas::after,
+  .container_recompensas::after {
+    display: none;
+  }
+
+  /* caja preguntas */
+
+  .container_questions{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,auto);
+    gap: 2rem;
+  }
+
+  .container_questions p{
+      font-size: .9rem;
+  }
+
+  .questions{
+    grid-column: span 2;
+  }
+
+  .title_quetions,
+  .texto_questions{
+    max-width:30rem ;
+  }
+  
+  .title_quetions,
+  .texto_questions{
+    padding: 0 5rem ;
+  }
+
+}
+
+@media screen and (min-width: 790px) {
+  /*  HEADER  */
+  .container-width {
+    width: 95%;
+  }
+
+  .nav-items {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container-nav {
+    display: inline-flex;
+    gap: 1rem;
+  }
+
+  .container-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .container-nav ul li a {
+    text-decoration: none;
+    color: var(--bg-suplement);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .container-nav .menu-icon {
+    display: none;
+  }
+
+  .container-login {
+    display: inline-block;
+  }
+
+  .item-location {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    margin-right: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .fa-location-dot {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+  }
+
+  .item-enlace {
+    border: 1.5px solid rgb(0, 0, 0);
+    margin-left: 0.5rem;
+    color: var(--color-primary);
+  }
+
+  .bg {
+    background-color: var(--bg-suplement);
+    color: white;
+    font-weight: bold;
+  }
+
+  /* main */
+  .hero-image {
+    width: 100%;
+    padding-bottom: 1%;
+    background-color: rgb(212, 233, 226);
+    background-image: url(assets/xl-hero-desktop.webp);
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .info_starbucks {
+    padding: 13rem 1rem 12rem 2rem;
+  }
+
+  .info_starbucks .title-sb {
+    width: 18rem;
+    font-size: 2.25rem;
+    text-align: start;
+    line-height: 3rem;
+  }
+
+  .info_starbucks .paragrapf-sb {
+    font-size: 1.07rem;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .item-sb-movil {
+    display: none;
+  }
+
+  .item-sb-desktop {
+    display: initial;
+    background-color: #008248;
+    color: white;
+    font-size: 1.15rem;
+    border: none;
+  }
+
+  .item_sb-direction-desktop {
+    width: auto;
+  }
+
+  /* Section FAVORITOS */
+
+  .info_favorites {
+    margin: 0 auto;
+  }
+
+  .start {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .cont_information {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .cont_info {
+    width: 375px;
+  }
+
+  .cont_information img {
+    height: auto;
+    object-fit: cover;
+  }
+  .container_about h2{
+    font-size: 1.5rem;
+  }
+
+  .terminos{
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .terminos a{
+    border-right: 1px solid black;
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .metod_pago {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: repeat(2, fit-contend);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .metods_pago {
+    margin: 0;
+  }
+
+  .container_metods_card {
+    grid-column: span 2;
+  }
+
+  .titles {
+    font-size: 1.5rem;
+  }
+
+  .titles p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+
+  .texto_pago {
+    width: 60%;
+    margin: 1rem auto;
+  }
+
+  .enlace_recompensa {
+    color: white;
+    border: none;
+  }
+
+  /* ENLACES EXTERNOS */
+  .enlaces_externos{
+    display: flex;
+  }
+  .container_about{
+    width: 25%;
+    padding: 1rem ;
+  }
+
+  .container_about i{
+    display: none;
+  }
+
+  .item_about{
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    color: #d4e9e2;
+  }
+
+  .item_about a{
+    color:#000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+ 
+}
