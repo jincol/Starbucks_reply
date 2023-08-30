@@ -5,6 +5,7 @@
   font-family: var(--font-family);
 }
 
+
 h1,
 h2,
 h3 {
@@ -29,6 +30,10 @@ img {
 .container-width {
   width: 90%;
   margin: 0 auto;
+}
+
+.item-enlace{
+  border: none !important;
 }
 /*
     NAVEGACION -HEADER
@@ -345,8 +350,8 @@ img {
   position: absolute;
   width: 40%;
   height: 50%;
-  top: -6rem;
-  left: 0;
+  top: -13rem;
+  left: -3rem;
   transform: rotate(160deg);
 }
 
@@ -355,7 +360,7 @@ img {
   position: absolute;
   width: 40%;
   height: 50%;
-  bottom: -11rem;
+  bottom: -8rem;
   right: -4rem;
   transform: rotate(200deg);
 }
