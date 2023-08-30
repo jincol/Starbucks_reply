@@ -173,9 +173,10 @@ img {
 }
 
 /* SECCION FAVORITOS */
+
 .container_favorites {
   text-align: center;
-  padding-bottom: 75%;
+  padding-bottom: 80%;
 }
 
 .start {
@@ -219,10 +220,10 @@ img {
 .info_favorites {
   position: absolute;
   width: 100%;
-  height: auto;
   background-color: var(--bg-primary-clear);
   transition: all 0.2s ease;
   padding: 0 1rem;
+  overflow: hidden;
 }
 
 .info_favorites img {
