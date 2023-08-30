@@ -32,7 +32,8 @@ img {
   margin: 0 auto;
 }
 
-.item-enlace{
+.container_item-favorites .item-enlace, 
+.hero-image .item-enlace{
   border: none !important;
 }
 /*
